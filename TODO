@@ -1,4 +1,5 @@
-integrate index.html style into main blog page
+adapt index.html style as a wordpress theme
+
 replace index.html with a permanent redirect to http://josecherrera.zxq.net
 revise redirect strategy
 
@@ -6,3 +7,5 @@ elaborate on step 4 in genetic algorithm
 
 devise a strategy for serving random algorithms on main page without regenerating the page
 eg. setting a cookie for each user, etc.. (take into account DNS and caching issues)
+
+remove unused css

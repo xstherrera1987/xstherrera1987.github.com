@@ -419,3 +419,13 @@ footer {
     color:#444;
   }
 }
+
+/***************************************************/
+footer p {
+	font-size:8pt;
+	margin: 0;
+}
+
+footer p.tiny {
+	font-size:6pt;
+}
