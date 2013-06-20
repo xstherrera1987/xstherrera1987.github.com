@@ -1,3 +1,4 @@
+// TODO what is the purpose of this fix
 fixScale = function(doc) {
 
 	var addEvent = 'addEventListener',

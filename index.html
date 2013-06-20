@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>Joe Herrera</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    
-    <script src="javascripts/scale.fix.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
@@ -18,7 +15,7 @@
         <p class="header">personal page</p>
         <ul>
           <li><a class="buttons github" href="https://github.com/xstherrera1987">GitHub Profile</a></li>
-          <li><a class="buttons" href="http://www.linkedin.com/in/xstherrera1987">LinkedIn Profile</a></li>
+          <li><a class="buttons linkedin" href="http://www.linkedin.com/in/xstherrera1987">LinkedIn Profile</a></li>
           <li><a class="buttons bitbucket" href="https://bitbucket.org/xstherrera1987">Bitbucket Profile</a></li>
         </ul>
       </header>
@@ -39,12 +36,12 @@
             1. Generate random population := n <br />
             2. Evaluate f(p) for each p in n <br />
             3. For all p in n <br />
-                &nbsp&nbsp&nbsp&nbsp4. Select pairs of p such that the sum of all f(pA) - f(pB) is minimized <br />
-                &nbsp&nbsp&nbsp&nbsp5. With some probability C, cross over pairs of p to form new a offspring. <br />
-                &nbsp&nbsp&nbsp&nbsp6. With some probability M, mutate it at each locus. <br />
-                &nbsp&nbsp&nbsp&nbsp7. Place it in a new population for next iteration<br />
-            8. If the goal is met return this solution (the fittest member in the new population) <br /> 
-            	&nbsp&nbsp&nbsp&nbsp otherwise return to step 2 with the new population. <br />
+                <!-- TODO change to <span class="indented"></span> -->
+                &nbsp;&nbsp;&nbsp;&nbsp;4. Select pairs of p such that the sum of all f(pA) - f(pB) is minimized <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;5. With some probability C, cross over pairs of p to form new a offspring. <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;6. With some probability M, mutate it at each locus. <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;7. Place it in a new population for next iteration<br />
+            8. If the goal is met return this solution (the fittest member in the new population) otherwise return to step 2 with the new population. <br />
 		<hr />
       </section>
 	<footer>
@@ -52,6 +49,9 @@
 		<p class="tiny">Adapted from Github Pages Dinky Theme</small></p>
 	</footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <!--[if !IE]>
+        <script src="js/scale.fix.js"></script>
+        <script>fixScale(document);</script>
+    <![endif]-->
   </body>
 </html>
