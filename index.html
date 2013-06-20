@@ -21,7 +21,7 @@
         </ul>
       </header>
       
-      <section>
+      <div id="main">
         <h3>Life is what you make of it...</h3>
         <p>So let's make something ... greater than ourselves.</p>
         
@@ -32,22 +32,26 @@
         
         <h3>Random Code Snippet</h3>
         
+        <section id="geneticAlgorithm">
         <h6>General Genetic Algorithm</h6>
-        	<em>f(x)</em> is the fitness function <br />
-            1. Generate random population := n <br />
-            2. Evaluate f(p) for each p in n <br />
-            3. For all p in n <br />
-                <!-- TODO change to <span class="indented"></span> -->
-                &nbsp;&nbsp;&nbsp;&nbsp;4. Select pairs of p such that the sum of all f(pA) - f(pB) is minimized <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;5. With some probability C, cross over pairs of p to form new a offspring. <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;6. With some probability M, mutate it at each locus. <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;7. Place it in a new population for next iteration<br />
-            8. If the goal is met return this solution (the fittest member in the new population) otherwise return to step 2 with the new population. <br />
+            <span class="pseudoCode">
+        	<span class="pseudoDeclarations"><em>f(x)</em> is the fitness function <br /></span>
+                1. Generate random population := n <br />
+                2. Evaluate f(p) for each p in n <br />
+                3. For all p in n <br />
+                    <span class="pseudoCodeIndent1">4. Select pairs of p such that the sum of all f(pA) - f(pB) is minimized</span><br />
+                    <span class="pseudoCodeIndent1">5. With some probability C, cross over pairs of p to form new a offspring.</span><br />
+                    <span class="pseudoCodeIndent1">6. With some probability M, mutate it at each locus.</span><br />
+                    <span class="pseudoCodeIndent1">7. Place it in a new population for next iteration</span><br />
+                8. If the goal is met return this solution (the fittest member in the new population) otherwise return to step 2 with the new population.</span><br />
+            </span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </section>
 		<hr />
-      </section>
+      </div>
 	<footer>
 		<p><small>Optimized for Modern Browsers</small></p>
-		<p class="tiny">Adapted from Github Pages Dinky Theme</small></p>
+		<p class="tiny">Adapted from Github Pages Dinky Theme</p>
 	</footer>
     </div>
     <!--[if !IE]>
