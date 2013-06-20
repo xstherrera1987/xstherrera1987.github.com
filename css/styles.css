@@ -267,6 +267,7 @@ header li:hover {
 }
 
 /* Header Buttons */
+/* TODO add header as parent in selector */
 a.buttons {
     -webkit-font-smoothing: antialiased;
     font-weight: normal;
