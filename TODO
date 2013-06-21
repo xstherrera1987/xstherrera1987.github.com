@@ -7,5 +7,11 @@ elaborate on step 4 in genetic algorithm (call a separate function)
 
 add "blog coming soon" section
 
-investigate why "header a" do not have correct color on mobile device (Droid Pro)
- 
+investigate why "header .button" do not have correct color on Droid Pro
+
+add SEO modifications, meta tags
+
+fix responsive design:
+	classic layout should scale down to 520px
+	vertical layout for anything below 520px
+	largest layout leave as-is for now

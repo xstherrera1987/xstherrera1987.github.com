@@ -1,62 +1,56 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Joe Herrera</title>
+    <head>
+        <title>Joe Herrera</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>Joe Herrera</h1>
+                <h2>personal page</h2>
+                <ul>
+                    <li><a class="button" id="github" href="https://github.com/xstherrera1987">GitHub Profile</a></li>
+                    <li><a class="button" id="linkedin" href="http://www.linkedin.com/in/xstherrera1987">LinkedIn Profile</a></li>
+                    <li><a class="button" id="bitbucket" href="https://bitbucket.org/xstherrera1987">Bitbucket Profile</a></li>
+                </ul>
+            </header>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- TODO revise this -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Joe Herrera</h1>
-        <p class="header">personal page</p>
-        <ul>
-          <li><a class="buttons github" href="https://github.com/xstherrera1987">GitHub Profile</a></li>
-          <li><a class="buttons linkedin" href="http://www.linkedin.com/in/xstherrera1987">LinkedIn Profile</a></li>
-          <li><a class="buttons bitbucket" href="https://bitbucket.org/xstherrera1987">Bitbucket Profile</a></li>
-        </ul>
-      </header>
-      
-      <div id="main">
-        <h3>Life is what you make of it...</h3>
-        <p>So let's make something ... greater than ourselves.</p>
-        
-        <p>
-        	<em>The appropriately programmed computer ... [will] have a mind in exactly the same sense [that] human beings have minds. - John Searle
-       		</em>
-        </p>
-        
-        <h3>Random Code Snippet</h3>
-        
-        <section id="geneticAlgorithm">
-        <h6>General Genetic Algorithm</h6>
-            <span class="pseudoCode">
-        	<span class="pseudoDeclarations"><em>f(x)</em> is the fitness function <br /></span>
-                1. Generate random population := n <br />
-                2. Evaluate f(p) for each p in n <br />
-                3. For all p in n <br />
-                    <span class="pseudoCodeIndent1">4. Select pairs of p such that the sum of all f(pA) - f(pB) is minimized</span><br />
-                    <span class="pseudoCodeIndent1">5. With some probability C, cross over pairs of p to form new a offspring.</span><br />
-                    <span class="pseudoCodeIndent1">6. With some probability M, mutate it at each locus.</span><br />
-                    <span class="pseudoCodeIndent1">7. Place it in a new population for next iteration</span><br />
-                8. If the goal is met return this solution (the fittest member in the new population) otherwise return to step 2 with the new population.</span><br />
-            </span>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            </section>
-		<hr />
-      </div>
-	<footer>
-		<p><small>Optimized for Modern Browsers</small></p>
-		<p class="tiny">Adapted from Github Pages Dinky Theme</p>
-	</footer>
-    </div>
-    <!--[if !IE]>
-        <script src="js/scale.fix.js"></script>
-        <script>fixScale(document);</script>
-    <![endif]-->
-  </body>
+            <div id="main">
+                <h3>Life is what you make of it...</h3>
+                <p>So let's make something ... greater than ourselves.</p>
+
+                <p class="quote">The appropriately programmed computer ... [will] have a mind in exactly the same sense [that] human beings have minds. - John Searle</p>
+
+                <section id="randomCode">
+                <h3>Random Code Snippet</h3>
+                    <article id="geneticAlgorithm">
+                        <section class="pseudoCode">
+                            <h6>General Genetic Algorithm</h6>    
+                            <span><span class="var">x</span> is a solution/individual in the problem domain</span><br />
+                            <span><span class="function">f</span>(x) is the fitness of x</span><br />
+                            <span><span class="function">g</span>(x,i) is the genetic representation of x as a sequence of indexed attributes/loci</span><br />
+                            <br />
+                            <span>1. Generate random population as <span class="var">pop</span></span><br />
+                            <span>2. Evaluate f(m) for each member <span class="var">m</span> in <span class="var">pop</span></span><br />
+                            <span>3. For each member as <span class="var">m</span> in <span class="var">pop</span></span><br />
+                            <span class="pseudoCodeIndent1">4. Select pairs of <span class="var">m</span> such that the sum of all f(<span class="var">m<sub>1</sub></span>) - f(<span class="var">m<sub>2</sub></span>) is minimized</span><br />
+                            <span class="pseudoCodeIndent1">5. With some probability <span class="var">C</span>, cross over pairs of <span class="var">m</span> to form new a offspring as <span class="var">off</span>.</span><br />
+                            <span class="pseudoCodeIndent1">6. With some probability <span class="var">M</span>, mutate <span class="var">off</span> at each locus.</span><br />
+                            <span class="pseudoCodeIndent1">7. Place <span class="var">off</span> in a new population as <span class="var">newPop</span> for next iteration</span><br />
+                            <span>8. If the goal is met return the solution (fittest member in <span class="var">newPop</span>) otherwise return to step 2 with only the best of <span class="var">pop</span> + <span class="var">newPop</span> as <span class="var">pop</span>.</span>
+                            <hr />
+                        </section>
+                    </article>
+                </section>
+            </div>
+            <footer>
+                <p><small>Optimized for Modern Browsers</small></p>
+                <p class="tiny">Adapted from Github Pages Dinky Theme</p>
+            </footer>
+        </div>
+    </body>
 </html>
