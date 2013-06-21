@@ -15,3 +15,11 @@ fix responsive design:
 	classic layout should scale down to 520px
 	vertical layout for anything below 520px
 	largest layout leave as-is for now
+
+design / reappropriate existing icon for favicon.ico
+	preferably with transparency (see GoogleVoice for nice example)
+	maybe even the ChromeSettings icon
+
+add crossdomain.xml
+add robots.txt
+add sitemap.xml
