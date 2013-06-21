@@ -22,12 +22,11 @@ body {
     background-color: #FBFAF7;
     margin: 0;
     line-height: 1.8em;
-    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #232323;
-    margin: 36px 0 10px;
+    margin: 24px 0 10px;
 }
 
 p, ul, ol, table, dl {
@@ -42,7 +41,7 @@ h1, h2, h3 {
 
 h1, h2, h3 {
     display: block;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #CCCCCC;
     padding-bottom: 5px;
 }
 
@@ -64,7 +63,7 @@ h4, h5, h6 {
 }
 
 a {
-    color: #C30000;
+    color: #000099;
     font-weight: 200;
     text-decoration: none;
 }
@@ -160,6 +159,8 @@ pre {
     overflow-y: hidden;
     margin-bottom: 32px;
 }
+
+/* psuedo code */
 .pseudoDeclaration {
     font-weight: bold;
 }
@@ -217,7 +218,9 @@ header {
     margin: 30px 25px 0 0;
 }
 
-header h1, h2, a {
+header h1, 
+header h2, 
+header a {
     color:#FFFFFF;
 }
 
@@ -261,11 +264,11 @@ header li:hover {
 }
 
 header a.button {
-    -webkit-font-smoothing: antialiased;
     font-weight: normal;
     text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
     padding: 2px 2px 2px 22px;
     height: 30px;
+    white-space:nowrap;
 }
 
 header a.buttons:hover {
@@ -290,6 +293,7 @@ header a.buttons:hover {
     padding-bottom: 50px;
 }
 
+/* TODO format using different selector */
 #main > h3:first-child {
     margin-top: 30px;
 }
