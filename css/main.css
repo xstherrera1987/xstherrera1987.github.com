@@ -291,11 +291,7 @@ header a.buttons:hover {
     width: 650px;
     float: right;
     padding-bottom: 50px;
-}
-
-/* TODO format using different selector */
-#main > h3:first-child {
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 /* Footer */
@@ -306,19 +302,23 @@ footer {
     bottom: 10px;
     padding-left: 50px;
 }
-
 footer p {
     font-size: 8pt;
     margin: 0;
 }
-
 footer p.tiny {
     font-size: 6pt;
 }
 
-/* Media Queries */
+/* regular width, but really short window: fix footer overlapping header */
+@media print, screen and (max-height:400px) and (min-width:960px) {
+	footer {
+		display: none;
+	}
+}
 
-/* classic computer screen size and old iphones */
+/* classic computer screen size (1024x768) and old iphones: */
+/* header at the top, footer at the bottom, content in between */
 @media print, screen and (max-width: 960px) {
 
     div.wrapper {
@@ -355,7 +355,7 @@ footer p.tiny {
     }
 }
 
-/* small and medium phones use vertical layout */
+/* small and medium phones: use vertical layout */
 @media print, screen and (max-width: 720px) {
     header {
         padding: 10px 20px 0;
